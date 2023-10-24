@@ -16,5 +16,16 @@ function onchange(e){
     var val = e.target.value;
     printBlock.textContent = val;
 }
+function onblur(e){
+    var text = keyBox.value.trim();
+    if(text==="")
+        keyBox.style.borderColor = "red";
+    else
+        keyBox.style.borderColor = "green";
+}
+function onfocus(e){
+    keyBox.style.borderColor = "blue";
+}
+</script>
 </body>
 </html>
