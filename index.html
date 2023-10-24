@@ -26,6 +26,9 @@ function onblur(e){
 function onfocus(e){
     keyBox.style.borderColor = "blue";
 }
+keyBox.addEventListener("change", onchange);
+keyBox.addEventListener("blur", onblur);
+keyBox.addEventListener("focus", onfocus);
 </script>
 </body>
 </html>
