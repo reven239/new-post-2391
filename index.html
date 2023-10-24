@@ -5,12 +5,12 @@
 </head>
 <body>
 <form name="search">
-    <input type="text" name="text1" placeholder="Введите текст"></input>
+    <input type="text" name="key" placeholder="Введите ключ"></input>
     <input type="button" name="print" value="Печать" />
 </form>
 <div id="printBlock"></div>
 <script>
-var keyBox = document.search.text1;
+var keyBox = document.search.key;
 function onchange(e){
     var printBlock = document.getElementById("printBlock");
     var val = e.target.value;
@@ -23,6 +23,7 @@ function onblur(e){
     else
         keyBox.style.borderColor = "green";
 }
+// получение фокуса
 function onfocus(e){
     keyBox.style.borderColor = "blue";
 }
